@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas y Posicionamiento</title>
+
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: salmon;
+        }
+
+        .caja {
+            border: 2px solid teal;
+            border-left: 10px solid teal;
+            border-right: 10px solid teal;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        .caja-absoluta {
+            width: 200px;
+            height: 100px;
+        }
+
+        .caja-absoluta-2 {
+            width: 200px;
+            height: 100px;
+        }
+
+        .relativa-rem {
+            width: 15rem;
+            height: 10rem;
+        }
+
+        .relativa-em {
+            width: 15em;
+            height: 10em;
+        }
+
+        .relativa-perc {
+            width: 50%;
+            height: 100px;
+        }
+
+        .caja-padre {
+            width: 80%;
+            height: 250px;
+        }
+
+        .relativa-mm-x {
+            width: 50%;
+            min-width: 250px;
+            max-width: 400px;
+        }
+
+        .relativa-viewport {
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Medidas y Posicionamiento</h1>
+
+    <section>
+        <h2>Medidas Absolutas</h2>
+        <ul>
+            <li>
+                px: Unidad absoluta para definir el tamaño de algo, en base a los pixeles. Segun la calidad del
+                dispositivo esto sera mas grando o mas chico
+                <div class="caja caja-absoluta">
+
+                </div>
+                <br>
+                <div class="caja caja-absoluta-2">
+
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Medidas Relativas</h2>
+
+        <ul>
+            <li>
+                REM
+                <div class="caja relativa-rem"></div>
+            </li>
+            <li>
+                EM
+                <div style="font-size: 10px;">
+                    <div class="caja relativa-em">
+                    </div>
+                </div>
+            </li>
+            <li>
+                Porcentual
+                <div class="caja" style="width: 500px;">
+                    caja padre
+                    <div class="caja relativa-perc">
+                        caja hija - ancho 50%
+                    </div>
+                </div>
+            </li>
+            <li>
+                Porcentual
+                <div class="caja caja-padre">
+                    caja padre
+                    <div class="caja relativa-mm-x">
+                        caja hija - ancho minimo 250px y aancho maximo 400px
+                    </div>
+                </div>
+            </li>
+            <li>
+                Relativa Viewport
+                caja padre
+                <div class="caja relativa-viewport">
+                    caja hija - ancho minimo 250px y aancho maximo 400px
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>

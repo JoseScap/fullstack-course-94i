@@ -1,0 +1,45 @@
+/* Estilos para dispositivos móviles (por defecto) */
+body {
+  font-size: 16px;
+}
+
+/* Media query para tabletas y pantallas más grandes */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Media query para pantallas más grandes, como computadoras de escritorio */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Estilos para la pantalla */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Media query para la impresión */
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+
+  /* También puedes definir estilos específicos para la impresión de otros elementos, como ocultar ciertos elementos en pantalla */
+  .no-print {
+    display: none;
+  }
+}
+
+/* Breakpoint	Class infix	Dimensions
+Extra small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */

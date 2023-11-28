@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: grey;">
+    <a href="#formulario">Inscripcion</a>
+
+    <!-- Esta es la etiqueta principal -->
+    <table>
+        <!-- Esta es la fila de las cabeceras -->
+        <!-- TR -> Table Row -> Fila de Tabla -->
+        <tr>
+            <!-- Las n cabeceras van aqui -->
+            <!-- TH -> Table Head -> Cabecera de tabla -->
+            <th>Productos</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+        <!-- Aqui ya van las filas que son parte del cuerpo -->
+        <tr>
+            <!-- TD -> Table Data -> Datos de la tabla -->
+            <!-- Un dato es la unidad minima de informacion -->
+            <td>Nike Airmax</td>
+            <td>Zapatillas de color cream con azul</td>
+            <td>$ 25.000</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <section>
+        <h3>Tablas</h3>
+        <!-- Esta es la etiqueta principal -->
+        <table style="background-color: indigo;">
+            <thead>
+                <!-- esta es la fila de las cabeceras -->
+                <tr style="background-color: pink;">
+                    <!-- Aqui van las n cabeceras -->
+                    <!-- TR -> es Table Row(Fila de tabla) -->
+                    <!-- TH es Table Head (Cabecera de tabla) -->
+                    <th colspan="4">Mi Beauty Shop</th>
+                </tr>
+                <tr style="background-color: pink;">
+                    <!-- Aqui van las n cabeceras -->
+                    <!-- TR -> es Table Row(Fila de tabla) -->
+                    <!-- TH es Table Head (Cabecera de tabla) -->
+                    <th>Productos</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui van las filas que son parte del cuerpo -->
+                <tr sty>
+                    <!-- TD es Table Dle="background-color: palevioletred;"ata(datos de la tabla) -->
+                    <td> NIKE Airmax</td>
+                    <td>Zapatillas de color crema con azul</td>
+                    <td>$ 35.000</td>
+                    <td>68</td>
+                </tr>
+                <tr style="background-color: pink;">
+                    <td>Jeans Rider</td>
+                    <td>Los mejores jeans de la temporada primavera-verano 2023</td>
+                    <td>$ 20.000</td>
+                    <td>25</td>
+                </tr>
+                <tr style="background-color: palevioletred;">
+                    <td>Remera Rider</td>
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing </td>
+                    <td>$ 8.000</td>
+                    <td>48</td>
+                </tr>
+                <tr style="background-color: pink;">
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+                <tr style="background-color: palevioletred;">
+                    <td colspan="2" style="text-align: right;">Activos Totales</td>
+                    <td>$ 3.264.000</td>
+                    <td>141</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>Formularios</h3>
+
+        <!-- <form style="background-color: lightcyan;">
+            <div>
+                <label for="">Input para texto</label>
+                <input type="text" placeholder="Ingrese un texto">
+            </div>
+            <br>
+            <div>
+                <label for="">Input para numero</label>
+                <input type="number" placeholder="Ingrese un numero">
+            </div>
+            <br>
+            <div>
+                <label for="">Input para email</label>
+                <input type="email" placeholder="Ingrese un email">
+            </div>
+            <br>
+            <div>
+                <label for="">Input para telefono</label>
+                <input type="tel" placeholder="Ingrese un numero de telefono" required>
+            </div>
+            <br>
+            <button>Enviar</button>
+        </form> -->
+        <form style="background-color: lightcyan;" id="formulario">
+            <div>
+                <label for="mail">Nombre</label>
+                <input type="text" placeholder="Ingrese un nombre" id="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="mail">Apellido</label>
+                <input type="text" placeholder="Ingrese un apellido" id="apellido" required>
+            </div>
+            <br>
+            <div>
+                <label for="mail">Email</label>
+                <input type="text" placeholder="Ingrese un email" id="mail" required>
+            </div>
+            <br>
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" placeholder="Ingrese su edad" id="edad" min="18" max="64" required>
+            </div>
+            <br>
+            <div>
+                <label for="nacimiento">Fecha Nacimiento</label>
+                <input type="date" placeholder="Ingrese su fecha de nacimiento" id="nacimiento" max="2005-10-19">
+            </div>
+            <br>
+            <div>
+                <label for="ingreso">Fecha Ingreso</label>
+                <input type="date" placeholder="Ingrese su fecha de nacimiento" id="ingreso" min="2023-10-19">
+            </div>
+            <br>
+            <div>
+                <label for="asado">Les gusta el asado?</label>
+                <input type="checkbox" id="asado">
+            </div>
+            <br>
+            <div>
+                <label for="carnes">Corte de carne preferido</label>
+                <select id="carnes" name="preferido">
+                    <option value="respuesta1">Costilla</option>
+                    <option value="respuesta2">Vacio</option>
+                    <option value="respuesta3">Tira de lomo</option>
+                    <option value="respuesta4">Entrañas</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="team-frio">Team frio</label>
+                <input type="radio" name="team" id="team-frio">
+                <label for="team-calor">Team Calor</label>
+                <input type="radio" name="team" id="team-calor">
+            </div>
+            <br>
+            <div>
+                <label for="plus">Plus</label>
+                <input type="radio" name="subscripcion" id="plus">
+                <label for="premium">Premium</label>
+                <input type="radio" name="subscripcion" id="premium">
+                <label for="business">Business</label>
+                <input type="radio" name="subscripcion" id="business">
+            </div>
+            <br>
+            <div>
+                <label for="pass">Contraseña</label>
+                <input type="password" placeholder="*********" id="pass" required>
+            </div>
+            <br>
+            <div>
+                <label for="validar">Repetir Contraseña</label>
+                <input type="password" placeholder="*********" id="validar" required>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- <input type="submit" value="Enviar"> -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First</title>
+    <link rel="stylesheet" href="/styles/cssnormalize-min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <header class="header no-print">
+        <nav class="nav">
+            <a href="#" class="nav-link">
+                <img class="nav-brand" src="./assets/logo-school.png" alt="Rolling Code School Logo">
+            </a>
+        </nav>
+    </header>
+    <main class="main no-print">
+        <div class="image-wrapper">
+            <div class="image"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="content">
+            <h1 class="title">Rolling Code School</h1>
+            <h2 class="subtitle">Cambiá tu futuro</h2>
+            <p class="description">
+                Aprendé a programar desde cero y sumate a la industria con mayor crecimiento. No hace falta que tengas
+                experiencia. Nosotros te la damos.
+            </p>
+            <button class="cta">Preguntas? Escribenos!</button>
+        </div>
+    </main>
+    <section class="contact">
+        <h3>Contacto</h3>
+        <form class="form">
+            <div class="first-col">
+                <div class="form-group">
+                    <label for="firstname" class="form-label">Nombre</label>
+                    <input type="text" class="form-input" name="firstname" id="firstname"
+                        placeholder="Ingresa tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="form-label">Apellido</label>
+                    <input type="text" class="form-input" name="lastname" id="lastname"
+                        placeholder="Ingresa tu apellido">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">E-Mail</label>
+                    <input type="email" class="form-input" name="email" id="email" placeholder="Ingresa tu E-Mail">
+                </div>
+            </div>
+            <div class="second-col">
+                <div class="form-group">
+                    <label for="comment" class="form-label">Comentario</label>
+                    <textarea type="text" class="form-textarea" name="comment" id="comment"
+                        placeholder="Escribenos un comentario" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="form-cta">Preguntas? Escribenos!</button>
+            </div>
+        </form>
+    </section>
+    <!-- <section class="responsive">
+        <h3>Queries</h3>
+        <div class="small-device">
+            <h3>Pantalla pequeña</h3>
+        </div>
+        <div class="medium-device">
+            <h3>Pantalla mediana</h3>
+        </div>
+        <div class="large-device">
+            <h3>Pantalla grande</h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section> -->
+</body>
+
+</html>
