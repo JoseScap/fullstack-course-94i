@@ -1,5 +1,6 @@
-1. **Tabla de multiplicar:** Escribe un programa que pida al usuario un número entero e imprima la tabla de multiplicar de ese número, desde el 1 hasta el 10.
+1. Imprimir los primeros 10 números pares.
+2. Calcular la suma de los números del 1 al 100.
+3. Mostrar la tabla de multiplicar de un número específico hasta el 10.
 
-2. **Contador de vocales:** Desarrolla un programa que tome una cadena de texto ingresada por el usuario y cuente el número de vocales (a, e, i, o, u) que contiene dicha cadena.
-
-3. **Suma de los primeros N números:** Crea un programa que solicite al usuario un número entero positivo N y luego sume todos los números desde 1 hasta N utilizando un bucle `for`.
+1. Encontrar el valor máximo en un arreglo de números reales.
+2. Imprimir todos los elementos de una lista de nombres.

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arrastrar y soltar con JavaScript</title>
+    <style>
+        #draggable {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            cursor: move;
+        }
+
+        #droppable {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed #aaa;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        #draggable:active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="draggable" draggable="true">
+        Arrastrar
+    </div>
+
+    <div id="droppable">
+        Soltar aquí
+    </div>
+
+    <script>
+
+        // Obtener los elementos del DOM
+        const draggable = document.getElementById('draggable');
+        const droppable = document.getElementById('droppable');
+
+        // Agregar el evento 'dragstart' al elemento que se puede arrastrar
+        draggable.addEventListener('dragstart', (event) => {
+            event.dataTransfer.setData('text/plain', 'Arrastrando'); // Establecer datos a transferir
+        });
+
+        // Agregar el evento 'dragover' al área donde se puede soltar
+        droppable.addEventListener('dragover', (event) => {
+            event.preventDefault(); // Prevenir comportamiento predeterminado
+        });
+
+        // Agregar el evento 'drop' al área donde se puede soltar
+        droppable.addEventListener('drop', (event) => {
+            event.preventDefault(); // Prevenir comportamiento predeterminado
+            const data = event.dataTransfer.getData('text'); // Obtener datos transferidos
+            droppable.textContent = data; // Mostrar los datos en el área de soltar
+        });
+
+
+    </script>
+</body>
+
+</html>
