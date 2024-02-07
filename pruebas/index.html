@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ9</title>
+</head>
+
+<body>
+    <script>
+        let frase = prompt("Ingrese una frase")
+        let vocales = ""
+
+        for (let i = 0; i < frase.length; i++) {
+            let caracter = frase.charAt(i).toLowerCase()
+            if ("aeiou".includes(caracter)) {
+                vocales += caracter
+            }
+        }
+        console.log(`vocales en la frase: ${vocales}`)
+
+    </script>
+</body>
+
+</html>
